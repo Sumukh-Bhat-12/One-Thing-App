@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Sumukh-Bhat-12.github.io/One-Thing-App",
   "name": "onething-app",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,6 +7,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "build": "webpack",
     "dev-server": "webpack-dev-server"
   },
@@ -28,5 +31,8 @@
     "validator": "8.0.0",
     "webpack": "3.1.0",
     "webpack-dev-server": "2.5.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
